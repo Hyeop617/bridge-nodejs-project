@@ -1,0 +1,2 @@
+INSERT INTO bridge.u21_users (uid, pass, name, phone, point, passkey) VALUES ('aa@naver.com', 'mZyqHBaO27s=', 'ad', '01012312312', '204418055', 'okrHDD4Rg9qPaFvqVeBqMF38y+FEBd2KBUpVbyG3ykT+FArnI1AjbtQLW3H1ntVS');
+INSERT INTO bridge.u21_users (uid, pass, name, phone, point, passkey) VALUES ('admin', '7xLBjEGGYtM=', 'admin', '01010101010', '999999999', 'f/2iqPWEVEPKcqGtAxn2EOri8TBuzwAviWDf1pvr+xsUa64QHfCcY8JQXY8wzs11');

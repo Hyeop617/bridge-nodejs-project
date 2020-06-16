@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<script language="javascript">
+    function validate() {
+        let pw1 = document.getElementById("pw1").value;
+        let pw2 = document.getElementById("pw2").value;
+        let uid = document.getElementById("uid").value;
+
+        if (pw1 != pw2) {
+            alert("암호가 서로 다릅니다. 다시입력하세요");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<p>
+<div class="container">  <!-- container class 가 페이지의 컨텐츠영역을 지정 -->
+    <div class="jumbotron" style="width:500px; margin:auto">
+
+        <div class="bm-login-form" style='width:400px; margin-left:auto; margin-right:auto; border:1px'>
+
+            <div class="starter-template">
+                <h5> 회원가입</h5>
+                <hr>
+            </div>
+
+            <form name=join onsubmit="return validate()" method=post action="/users/reg">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">아이디(이메일로 입력)</label>
+                    <input type="email" class="form-control" name="uid" id="uid" aria-describedby="emailHelp"
+                           placeholder="이메일주소로 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">암 호</label>
+                    <input type="password" class="form-control" name="pw1" id="pw1" placeholder="암호는 최대20자까지 입력">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">한번더</label>
+                    <input type="password" class="form-control" name="pw2" id="pw2" placeholder="암호를 한번더 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName">이름</label>
+                    <input type="text" class="form-control" name="uname" id="uname" placeholder="이름을 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPhone">핸드폰</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="핸드폰번호">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPoint">포인트</label>
+                    <input type="text" class="form-control" name="point" id="point" placeholder="포인트">
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary">회원가입</button>
+            </form>
+        </div>
+    </div>
+</div><!-- /.container -->
+
+<!-- Footer 영역 -->

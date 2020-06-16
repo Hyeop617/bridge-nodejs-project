@@ -1,0 +1,40 @@
+<p>
+<div class="container">  <!-- container class 가 페이지의 컨텐츠영역을 지정 -->
+    <div class="jumbotron" style=" margin:auto">
+
+        <div class="bm-login-form" style=' margin-left:auto; margin-right:auto; border:1px'>
+
+            <div class="starter-template">
+                <h2>주문 완료</h2>
+                <hr>
+            </div>
+
+            <table class="m-2">
+                <tbody class="col-12">
+                <tr class="w-100">
+                    <td>
+                        <span class="m-2">
+                            <img src="<%= product.pic %>" alt="" width="200">
+                        </span>
+                    </td>
+                    <td>
+                        <div>🏢 <%= product.maker %></div>
+                        <div><%= product.pname %></div>
+                        <div style="font-size: 9pt; color:#888888">수량 : <%= amount %>개</div>
+                        <hr width="600">
+                        <span>총 </span><span class="h4" id="price"><%= price * amount %></span><span> 원</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+                <a href="../">
+                    <button class="btn btn-primary" type="button">홈으로</button>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div><!-- /.container -->
